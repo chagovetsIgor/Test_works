@@ -1,10 +1,4 @@
-# Напишите программу, удаляющую из текста все слова, содержащие ""абв""
-line = 'абв абвбп абвырыр апрпв ырырфп првапф рвапр абв'
-words = line.split(' ')
-fragment = 'абв'
-new_words = []
-for word in words:
-     if fragment not in word:
-         new_words.append(word)
-new_words = ' '.join(new_words)
-print (new_words)
+#напишите программу которая считает сумму цифр числа
+a = input(f"введите число для просчета ")
+summa = sum(map(int, str(a).replace(".", "")))
+print(summa)
